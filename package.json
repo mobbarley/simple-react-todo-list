@@ -1,0 +1,39 @@
+{
+  "name": "simple-react-todo-app",
+  "version": "1.0.0",
+  "description": "A Basic To Do App created in React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobbarley/simple-react-todo-app.git"
+  },
+  "author": "Soumik Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobbarley/simple-react-todo-app/issues"
+  },
+  "homepage": "https://github.com/mobbarley/simple-react-todo-app#readme",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.7.2",
+    "eslint-plugin-react": "^7.4.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
