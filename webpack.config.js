@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
 
@@ -11,8 +12,8 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
-                include: path.resolve(__dirname, 'src/app'),
+                test: /\.jsx?$/,
+                include: path.resolve(__dirname, 'src'),
                 loader: 'babel-loader',
                 query: {
                         "presets": [

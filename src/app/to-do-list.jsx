@@ -1,6 +1,6 @@
 import React from 'react';
-import { ListItem } from './list-item'
-import { AddItem } from './add-item'
+import ListItem from './list-item.jsx';
+import AddItem from './add-item.jsx';
 import css from './css/index.css';
 
 class ToDoList extends React.Component {
