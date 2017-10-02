@@ -10,12 +10,12 @@ module.exports = {
         publicPath: '/app/'
     },
     module: {
-        loaders: [
-            {
+        rules: [
+             {
                 test: /\.jsx?$/,
                 include: path.resolve(__dirname, 'src'),
                 loader: 'babel-loader',
-                query: {
+                options: {
                         "presets": [
                             ["env", {
                                 "loose": true,
@@ -33,14 +33,8 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
-                loader: 'style-loader!css-loader'
-            }
-        ],
-        rules: [
-            {
-            test: /\.css$/,
-            use: [ 'style-loader', 'css-loader' ]
+              test: /\.css$/,
+              use: [ 'style-loader', 'css-loader' ]
             }
         ]
     }
