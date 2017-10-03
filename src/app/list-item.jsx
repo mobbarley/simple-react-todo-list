@@ -1,5 +1,5 @@
 import React from 'react';
-import FaBeer from 'react-icons/fa/beer';
+import FaTrash from 'react-icons/lib/fa/trash';
 import css from './css/list-item.css';
 
 class ListItem extends React.Component {
@@ -15,7 +15,7 @@ class ListItem extends React.Component {
             <li>
                 <div className="todo-item">
                     <span className="item-name">{this.props.item}</span>
-                    <span className="item-delete" onClick={this.deleteItem}><FaBeer /></span>
+                    <span className="item-delete" onClick={this.deleteItem}><FaTrash /></span>
                 </div>
             </li>
         );
