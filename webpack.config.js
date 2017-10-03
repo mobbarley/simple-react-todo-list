@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
              {
-                test: /\.jsx?$/,
+                test: /.(js|jsx)?$/,
                 include: path.resolve(__dirname, 'src'),
                 loader: 'babel-loader',
                 options: {
@@ -22,13 +22,17 @@ module.exports = {
                                 "modules": false,
                                 "useBuiltIns": true,
                                 "debug": true,
-                                "include": ["transform-es2015-classes"]
+                                "include": ["transform-es2015-classes",
+                                    "transform-es2015-arrow-functions"
+                                ]
                             }],
                             "react"
                         ],
                         "plugins": [
                             "babel-plugin-transform-es2015-parameters",
-                            "babel-plugin-transform-es2015-destructuring"
+                            "babel-plugin-transform-es2015-arrow-functions",
+                            "babel-plugin-transform-es2015-destructuring",
+                            "babel-plugin-transform-class-properties"
                         ]
                 }
             },

@@ -1,7 +1,9 @@
 import React from 'react';
-import ListItem from './list-item.jsx';
-import AddItem from './add-item.jsx';
+
 import css from './css/index.css';
+
+import AddItem from './add-item.jsx';
+import ListItem from './list-item.jsx';
 
 class ToDoList extends React.Component {
     constructor(props) {
