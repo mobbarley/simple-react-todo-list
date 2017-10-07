@@ -9,8 +9,7 @@ class ToDoList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            todos: ['eat', 'sleep', 'drink', 'buy stuff'],
-            age: 30
+            todos: ['eat', 'sleep', 'drink', 'buy stuff']
         };
     }
     //Event handlers

@@ -19,8 +19,6 @@
   },
   "homepage": "https://github.com/mobbarley/simple-react-todo-app#readme",
   "dependencies": {
-    "install": "^0.10.1",
-    "npm": "^5.4.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-icons": "^2.2.5"
