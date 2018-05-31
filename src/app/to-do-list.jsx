@@ -11,18 +11,18 @@ class ToDoList extends React.Component {
         this.state = {
             todos: ['eat', 'sleep', 'drink', 'buy stuff']
         };
-    }
-    //Event handlers
-    onDelete(item) {
-        let updatedToDos = this.state.todos.filter((elem) =>{
-            return item !== elem;
-        });
-        this.setState({todos: updatedToDos});
-    }
-    onAdd(item) {
-        let updatedToDos = this.state.todos;
-        updatedToDos.push(item);
-        this.setState({todos: updatedToDos});
+        //Event handlers
+        this.onDelete = (item) => {
+            let updatedToDos = this.state.todos.filter((elem) => {
+                return item !== elem;
+            });
+            this.setState({todos: updatedToDos});
+        };
+        this.onAdd = (item) => {
+            let updatedToDos = this.state.todos;
+            updatedToDos.push(item);
+            this.setState({todos: updatedToDos});
+        };
     }
     render() {
         let todos = this.state.todos.map((item, index) => {

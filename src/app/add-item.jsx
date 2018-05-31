@@ -2,14 +2,14 @@ import React from 'react';
 import css from './css/add-item.css';
 
 class AddItem extends React.Component {
-    // Handle events
-    onSubmit(evt) {
-        evt.preventDefault();
-        this.props.onAdd(this.refs.newItem.value);
-        this.refs.newItem.value = '';
-    }
     constructor(props) {
         super(props);
+        // Handle events
+        this.onSubmit = (evt) => {
+            evt.preventDefault();
+            this.props.onAdd(this.refs.newItem.value);
+            this.refs.newItem.value = '';
+        };
     }
     render() {
         return (

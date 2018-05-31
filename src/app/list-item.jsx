@@ -5,10 +5,10 @@ import css from './css/list-item.css';
 class ListItem extends React.Component {
     constructor(props) {
         super(props);
-    }
-    // Handle Event
-    deleteItem() {
-        this.props.onDelete(this.props.item);
+        // Handle Events
+        this.deleteItem = () => {
+            this.props.onDelete(this.props.item);
+        };
     }
     render() {
         return(
