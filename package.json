@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^7.4.0",
     "style-loader": "^0.18.2",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
